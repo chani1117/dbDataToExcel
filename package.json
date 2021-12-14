@@ -1,0 +1,32 @@
+{
+  "name": "dbdatatoexcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pkg . --output app.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin":"index.js",
+  "pkg":{
+    "scripts": "*.js",
+    "targets": [
+    "node12-win-x64"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chani1117/dbDataToExcel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chani1117/dbDataToExcel/issues"
+  },
+  "homepage": "https://github.com/chani1117/dbDataToExcel#readme",
+  "dependencies": {
+    "axios": "0.24.0",
+    "exceljs": "4.3.0",
+    "pg": "8.7.1"
+  }
+}
